@@ -1,0 +1,42 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    min-width: 10px;
+    min-height: 10px;
+    border: 1px red dashed;
+}
+html{
+    height: 100vh;
+}
+body{
+    height: 100vh;
+    flex-grow: 0;
+    overflow: hidden;
+}
+
+.search{
+    font-size: 35px;
+    height: 100%;
+    width: 50px;
+    }
+.s-bar{
+ width: 100%;
+    padding: 0;
+}
+
+.colonna{
+    display: flex;
+    flex-direction: column;
+}
+.col-2.nav-left{
+    justify-content: space-between;
+}
+
+/*.main-sectionm{
+    height: 100%;
+}*/
+.scrollabile{
+    overflow:auto;
+    height: 100vh;
+}
