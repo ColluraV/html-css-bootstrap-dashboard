@@ -10,9 +10,10 @@ html{
     height: 100vh;
 }
 body{
-    height: 100vh;
     flex-grow: 0;
+    flex-shrink: 0;
     overflow: hidden;
+    height: 100vh;
 }
 
 .search{
@@ -29,14 +30,18 @@ body{
     display: flex;
     flex-direction: column;
 }
+nav .container-fluid .col-1{
+    flex-basis: content;
+}
+
 .col-2.nav-left{
     justify-content: space-between;
 }
 
-/*.main-sectionm{
+.main-section{
     height: 100%;
-}*/
+}
 .scrollabile{
     overflow:auto;
-    height: 100vh;
+height: 100vh;
 }
