@@ -13,40 +13,67 @@
 </head>
 
 <body>
-    <div id="nav-topper" class="container-fluid"> <!-- NAV TOP -->
+    <div id="top-section" class="container-fluid h-top"> <!-- NAV TOP -->
 
-        <div class="row ">
+        <div class="row h-top">
 
-            <div class="col-3"> <!-- contenitore logo -->
-                <a href="#"><img src="img/logo.svg" alt=""></a>
+            <div class="col-3 h-top center"> <!-- contenitore logo -->
+                <a class="align-middle" href="#">
+                    <img class="d-none d-md-block" src="img/logo.svg" alt=""> 
+                    <img class="h-top d-block d-md-none"src="img/mobile-logo.png" alt="">
+                </a>
             </div> <!-- contenitore logo -->
 
-            <div class="col-7"> <!-- contenitore ricerca -->
+            <div class="col-7 h-top center"> <!-- contenitore ricerca -->
                 <form class="s-bar d-flex" role="search">
                     <span class=" search "><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
                     </span>
-                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control  border-0 " type="search" placeholder="Search" aria-label="Search">
                 </form>
             </div> <!-- contenitore ricerca -->
 
-            <div class="col-2 d-flex"> <!-- contenitore icone dx -->
-                <div class="d-none d-md-block collapse" id="collapse-div">
-                    <a href=""><i class="fa-solid fa-list"></i></a>
-                    <a href=""><i class="fa-solid fa-question"></i></a>
-                    <a href=""><i class="fa-solid fa-ellipsis-vertical"></i>s</a>
+            <div class="col-2 center"> <!-- contenitore icone dx -->
+                <div class="row d-flex flex-nowrap w-100">
+
+                    <div class="d-none d-md-block col-md-9">
+
+                        <div class="d-none d-md-block" >
+                            <div class="box d-flex  justify-content-around">
+                                <a href=""><i class="fa-solid fa-list"></i></a>
+                                <a href=""><i class="fa-solid fa-question"></i></a>
+                                <a href=""><i class="fa-solid fa-ellipsis-vertical"></i>s</a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-12 col-md-3 d-flex justify-content-center">
+
+                        <a class="overbutton" data-bs-toggle="collapse" href="#collapse-div" role="button"
+                            aria-expanded="false" aria-controls="collapse-div">
+                            
+                            <i class="fa-solid fa-bell" style="color: #eada2a;"></i>
+
+                            <!--class= collapse
+                            id="collapse-div"   da aggiungere al form collapsed-->
+                        </a>
+
+                    </div>
+
                 </div>
-                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse-div" role="button"
-                    aria-expanded="false" aria-controls="collapse-div">
-                    <i class="fa-solid fa-star" style="color: #eada2a;"></i>
-                </a>
+
+
             </div> <!-- contenitore icone dx -->
         </div>
     </div> <!-- NAV TOP -->
 
-    <div class="container-fluid">                                       <!-- MAIN SECTION -->
+    <div class="container-fluid"> <!-- MAIN SECTION -->
         <div class="row">
 
-            <div class="col-2 nav-lat colonna justify-content-between"> <!-- nav left -->
+            <div  id="left-section" class="col-2 col-md-1 nav-lat colonna justify-content-between"> <!-- nav left -->
                 <div class="top-icon colonna">
 
                     <a href="#"> <i class="fa-solid fa-house  my-2"></i> <span class="hide"> Home
@@ -61,16 +88,28 @@
                 </div>
             </div> <!-- nav left -->
 
-            <div class="col-10 d-flex scrollabile"> <!-- contenuto scrollabile -->
-                <div class="box ">
+            <div class="col-10 col-md-11 colonna scrollabile h-bot"> <!-- contenuto scrollabile -->
 
+                    <div class="row row-cols-2">
+                        <div class="col"></div>
+                        <div class="col"></div>
+                    </div>
+                    
+                <div class="box w-100 ">
+                    <div class="row d-flex">
+                        <div class="col-12 col-md-7">
 
+                        </div>
+
+                        <div class="col-12 col-md-5"></div>
+
+                    </div>
                 </div>
             </div> <!-- contenuto scrollabile -->
 
         </div>
-    </div>                                                              <!-- MAIN SECTION -->
-    
+    </div> <!-- MAIN SECTION -->
+
 </body>
 
 </html>

@@ -12,18 +12,29 @@ body{
     height: 100vh;
 }
 
-.nav-topper{
-    height: 7vh;  /*se si cambia va cambiato anche scrollable*/
+#top-section{
+    background-color: #FCFDFD;
+}
+
+.h-top{
+    height:6vh;  /*se si cambia va cambiato anche h-bot*/
+}
+.h-bot{
+height: 94vh;    /*se si cambia va cambiato anche h-top*/
 }
 
 .search{
-    font-size: 35px;
-    height: 100%;
-    width: 50px;
+    font-size: 3vh;
+    margin: auto 0.5rem;
     }
+
+
 .s-bar{
- width: 100%;
+    width: 100%;
     padding: 0;
+    border: 1px solid rgb(202, 201, 201);
+    border-radius: 8px;
+
 }
 
 .colonna{       /*classe per contenuti display column off bootstrap*/
@@ -41,5 +52,19 @@ nav .container-fluid .col-1{
 .scrollabile{
     overflow:auto;
 
-    height: 93vh;    /*se si cambia va cambiato anche nav-topper*/
+}
+
+.center{
+    display: flex;
+    align-items: center;
+}
+
+#left-section{
+    background-color: #051E34;
+    color: white;
+}
+
+#left-section a{
+    text-decoration: none;
+    color: white;
 }
