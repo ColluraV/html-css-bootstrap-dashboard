@@ -11,9 +11,13 @@ html{
 }
 body{
     flex-grow: 0;
-    flex-shrink: 0;
-    overflow: hidden;
+
+    /*overflow: hidden;*/
     height: 100vh;
+}
+
+.nav-topper{
+    height: 7vh;
 }
 
 .search{
@@ -43,5 +47,6 @@ nav .container-fluid .col-1{
 }
 .scrollabile{
     overflow:auto;
-height: 100vh;
+
+    height: 93vh;
 }
