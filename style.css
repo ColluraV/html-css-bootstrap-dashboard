@@ -6,18 +6,14 @@
     min-height: 10px;
     border: 1px red dashed;
 }
-html{
-    height: 100vh;
-}
 body{
     flex-grow: 0;
-
-    /*overflow: hidden;*/
+    overflow: hidden;
     height: 100vh;
 }
 
 .nav-topper{
-    height: 7vh;
+    height: 7vh;  /*se si cambia va cambiato anche scrollable*/
 }
 
 .search{
@@ -30,7 +26,7 @@ body{
     padding: 0;
 }
 
-.colonna{
+.colonna{       /*classe per contenuti display column off bootstrap*/
     display: flex;
     flex-direction: column;
 }
@@ -42,11 +38,8 @@ nav .container-fluid .col-1{
     justify-content: space-between;
 }
 
-.main-section{
-    height: 100%;
-}
 .scrollabile{
     overflow:auto;
 
-    height: 93vh;
+    height: 93vh;    /*se si cambia va cambiato anche nav-topper*/
 }
