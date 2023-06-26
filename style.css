@@ -126,17 +126,44 @@ ul li img{
 }
 
 .list-group-item .row{
-    margin-right: 0;
-    margin-left: 0;
+    margin-right: 5px;
+    margin-left: 5px;
     padding: 0;
 }
 .no-m-p{
-    padding: 0 2px;
-    height: 50px;
-    
+    height: 42px;
+
+}
+.data{
+    min-width: 110px;
 }
 
+.bottoni{
+    min-width: 65px;
+    max-width: 90px;
+}
+.bottoni button{
+    border-radius: 6px;
+}
 
+#prossime-classi .box ul li .row{
+    border-bottom: 1px solid rgb(212, 212, 212);
+}
+#prossime-classi , #faq , #todo , #stats{
+    border: 2px solid rgb(212, 212, 212);
+    border-radius: 5px;
+    margin: 15px 0;
+    padding:5px;
+    background-color: #F7F7F7;
+}
+.card-header{
+    border-bottom:  1px solid rgb(212, 212, 212);
+}
+
+#stats a {
+    color: #1B72E8;
+    text-decoration: underline;
+}
  /************************************************ MEDIA QUERIES **************************************************/
 
 @media screen and ( max-width: 1200px){
