@@ -8,8 +8,19 @@
 }
 body{
     flex-grow: 0;
-    overflow: hidden;
+
     height: 100vh;
+}
+
+
+a:hover {
+    color: white;
+
+}
+
+a {
+    color: rgb(235, 235, 235);
+    text-decoration: none;
 }
 
 #top-section{
@@ -48,7 +59,7 @@ nav .container-fluid .col-1{
 .col-2.nav-left{
     justify-content: space-between;
 }
-
+/************************************************* MAIN SECTION ***************************************************/
 .scrollabile{
     overflow:auto;
 
@@ -63,6 +74,7 @@ nav .container-fluid .col-1{
     background-color: #051E34;
     color: white;
     width: 150px;
+    flex-shrink: 0;
 }
 
 #left-section a{
@@ -70,8 +82,71 @@ nav .container-fluid .col-1{
     color: white;
 }
 
-                                /*********** Badge blu**********/
+
+
+.badge.top{                             /*********** Badge blu**********/
+    background-color: #165BBA;
+} 
+
+#left-badge-container{
+    min-width: 520px;
+    max-width: 580px;
+}
 
  .azzurro{
     background-color: #1B72E8;
- }                               
+    max-height: 130px;
+    flex-shrink: 0;
+ }
+ 
+ #plus{
+    width: 1.6rem;
+ }
+ 
+ .oversized{
+    font-size: 30px ;
+ }
+ 
+ #squared-plus{
+    width:  calc(1.325rem + .9vw);
+    height:  calc(1.325rem + .9vw);
+ }
+
+
+ /************************************************* CARD SECTION ***********************************************************/
+
+
+ul li img{
+    width: 30px;
+}
+
+.list-group-item{
+    padding: 0;
+    margin: 0;
+}
+
+.list-group-item .row{
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0;
+}
+.no-m-p{
+    padding: 0 2px;
+    height: 50px;
+    
+}
+
+
+ /************************************************ MEDIA QUERIES **************************************************/
+
+@media screen and ( max-width: 1200px){
+    #left-badge-container{
+        min-width: 225px;
+    }
+
+}   
+@media screen and ( max-width: 767px){
+    .azzurro{
+        max-height: 300px;
+     }
+}
