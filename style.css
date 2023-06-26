@@ -17,14 +17,14 @@ body{
 }
 
 .h-top{
-    height:6vh;  /*se si cambia va cambiato anche h-bot*/
+    height:50px;  /*se si cambia va cambiato anche h-bot*/
 }
 .h-bot{
-height: 94vh;    /*se si cambia va cambiato anche h-top*/
+height: calc( 100vh - 50px );    /*se si cambia va cambiato anche h-top*/
 }
 
 .search{
-    font-size: 3vh;
+    font-size: 1.5rem;
     margin: auto 0.5rem;
     }
 
@@ -62,9 +62,16 @@ nav .container-fluid .col-1{
 #left-section{
     background-color: #051E34;
     color: white;
+    width: 150px;
 }
 
 #left-section a{
     text-decoration: none;
     color: white;
 }
+
+                                /*********** Badge blu**********/
+
+ .azzurro{
+    background-color: #1B72E8;
+ }                               
