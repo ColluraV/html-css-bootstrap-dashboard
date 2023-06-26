@@ -4,7 +4,7 @@
     box-sizing: border-box;
     min-width: 10px;
     min-height: 10px;
-    border: 1px red dashed;
+    /*border: 1px red dashed;*/
 }
 body{
     flex-grow: 0;
@@ -72,8 +72,9 @@ nav .container-fluid .col-1{
 
 #left-section{
     background-color: #051E34;
+    background-image: url(img/sidebar-bg.png);
     color: white;
-    width: 150px;
+    width: 120px;
     flex-shrink: 0;
 }
 
@@ -176,4 +177,7 @@ ul li img{
     .azzurro{
         max-height: 300px;
      }
+    #left-section{
+        width: 65px;
+    }
 }
