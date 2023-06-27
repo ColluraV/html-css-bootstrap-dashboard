@@ -74,7 +74,7 @@ nav .container-fluid .col-1{
     background-color: #051E34;
     background-image: url(img/sidebar-bg.png);
     color: white;
-    width: 120px;
+    width: 130px;
     flex-shrink: 0;
 }
 
@@ -83,9 +83,12 @@ nav .container-fluid .col-1{
     color: white;
 }
 
+#left-section a:hover{
+    background-color: #f7f7f760;
+}
 
 
-.badge.top{                             /*********** Badge blu**********/
+.background-scuro{                             /*********** Badge blu**********/
     background-color: #165BBA;
 } 
 
@@ -100,9 +103,7 @@ nav .container-fluid .col-1{
     flex-shrink: 0;
  }
  
- #plus{
-    width: 1.6rem;
- }
+
  
  .oversized{
     font-size: 30px ;

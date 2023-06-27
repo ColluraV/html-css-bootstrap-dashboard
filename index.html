@@ -77,16 +77,16 @@
                 <!-- nav left -->
                 <div class="top-icon colonna">
 
-                    <a href="#"> <i class="fa-solid fa-house my-3"></i> <span class="mx-2 d-none d-md-inline"> Home
+                    <a class="px-2" href="#"> <i class="fa-solid fa-house my-3 "></i> <span class="mx-2 d-none d-md-inline"> Home
                         </span></a>
-                    <a href="#"> <i class="fa-solid fa-chart-simple my-3"></i> <span class="mx-2 d-none d-md-inline">
+                    <a class="px-2" href="#"> <i class="fa-solid fa-chart-simple my-3"></i> <span class="mx-2 d-none d-md-inline">
                             Stats
                         </span></a>
-                    <a href="#"> <i class="fa-solid fa-signal my-3"></i> <span class="mx-2 d-none d-md-inline"> Home
+                    <a class="px-2" href="#"> <i class="fa-solid fa-signal my-3"></i> <span class="mx-2 d-none d-md-inline"> Home
                         </span></a>
                 </div>
                 <div class="bot-icon colonna">
-                    <a href=""><i class="fa-solid fa-gear  my-2"></i> <span class="mx-2 d-none d-md-inline">
+                    <a href=""><i class="fa-solid fa-gear px-1 my-2"></i> <span class="mx-2 d-none d-md-inline">
                             Admin</span></a>
                 </div>
             </div> <!-- nav left -->
@@ -97,35 +97,64 @@
                     <!-- banner orizzontale studenti -->
                     <div id="left-badge-container" class=" py-2 col colonna align-items-start justify-content-around">
                         <div class="d-flex text-center align-items-end  ">
-                            <h2 class="mb-0">Boolean</h2>
-                            <span class="badge top rounded-pill"><a href="">Piano blaze</a></span>
+                            <h2 class="mb-0 d-inline-block">Boolean</h2>
+                            <span class="badge background-scuro rounded-pill mx-3"><a href="">Piano blaze</a></span>
 
                         </div>
 
                         <div
-                            class=" py-2 d-flex text-center align-items-end  justify-content-start justify-content-xl-around">
-                            <span class="badge top rounded-pill "><a href="">3 app</a></span>
-                            <span> <i class=" fa-solid fa-angles-right" style="color: #ffffff;"></i> </span>
-                            <span id="plus" class="badge top rounded-circle d-lg-none d-block">+</span>
-                            <span class="badge top rounded-pill d-none d-xl-block"><a href="">Boolean web app</a></span>
-                            <span class="badge top rounded-pill d-none d-xl-block"><a href="">Boolean blog
+                            class=" py-2 d-flex align-items-end justify-content-xl-around  align-items-center">
+                            <span class="badge rounded-pill background-scuro"><a href="">3 app</a></span>
+                            <span> <i class=" fa-solid fa-angles-right mx-2" style="color: #ffffff;"></i> </span>
+                            <button class="btn btn-outline-light border-primary rounded-circle background-scuro d-xl-none"> + </button>
+                            <span class="badge rounded-pill d-none d-xl-block background-scuro"><a href="">Boolean web app</a></span>
+                            <span class="badge rounded-pill d-none d-xl-block background-scuro"><a href="">Boolean blog
                                     app</a></span>
-                            <span class="badge top rounded-pill d-none d-xl-block"><a href="">Boolean mobile
+                            <span class="badge rounded-pill d-none d-xl-block background-scuro"><a href="">Boolean mobile
                                     app</a></span>
                         </div>
 
                     </div>
 
-                    <div class=" py-3 col colonna align-items-start align-items-md-end  justify-content-around">
+                    <div class=" py-3 col colonna align-items-start align-items-md-end justify-content-around">
                         <div class="d-flex"> Studenti online negli ultimi 30 minuti</div>
                         <div class="d-flex oversized"> 125 </div>
                     </div>
 
-                    <div class="py-3 mb-auto col d-flex justify-content-md-center">
-                        <span class=" mx-3 align-middle">
+                    <div class="py-3 col d-inline-block ">
+                        <span class=" mx-2 align-middle">
                             Nuovo studente
                         </span>
-                        <button type="button" class="btn btn-outline-light"> +</button>
+                        
+
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                              <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Compila il Modulo</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                              </div>
+                              <div class="offcanvas-body">
+
+                                <form>
+                                    <div class="mb-3 ">
+                                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                    </div>
+                                    <div class="mb-3">
+                                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                                      <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                                
+                              </div>
+                            </div>
+
+                        <button type="button" class="btn btn-outline-light" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"> +</button>
                     </div>
                 </div>
 
@@ -258,28 +287,38 @@
                                     F.A.Q.
                                 </div>
                                 <div class="box">
-                                    <ul class="list-group list-group-flush"> <!-- lista oggetti card -->
-
-
-                                        <li class="list-group-item border border-0"> <!-- singolo oggetto lista card -->
-                                            <div class="row">
-                                                <select class="form-select" aria-label="Default select example">
-                                                    <option selected>Open this select menu</option>
-                                                    <option value="1">One</option>
-                                                </select>
-                                                <select class="form-select" aria-label="">
-                                                    <option selected>Open this select menu</option>
-                                                    <option value="1">One</option>
-
-                                                </select>
-                                                <select class="form-select" aria-label="Default select example">
-                                                    <option selected>Open this select menu</option>
-                                                    <option value="1">One</option>
-
-                                                </select>
-                                            </div>
-                                        </li>
-                                    </ul>
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                              come aggiungere un nuovo utente?
+                                            </button>
+                                          </h2>
+                                          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body"> Clicca in alto a destra e buona fortuna Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed beatae asperiores dolorum perspiciatis pariatur quaerat quod error doloribus ad dicta at qui, vel, nisi facere commodi culpa, hic animi illo.</div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                              Come posso accedere alle informazioni del mio account?
+                                            </button>
+                                          </h2>
+                                          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body"> Se lo scopri fammelo sapere Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem error id minima? Quidem earum perferendis laboriosam. Vero, mollitia aliquid! Molestias ab porro ratione quaerat corporis, sed enim adipisci voluptatem. </div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                              Posso usare questa dashboard da mobile?
+                                            </button>
+                                          </h2>
+                                          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body"> me lo auguro vista la fatica Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quaerat qui beatae voluptas. Voluptate ipsam ab, inventore asperiores eveniet molestias necessitatibus rerum animi id temporibus iste facere, earum rem exercitationem. </div>
+                                          </div>
+                                        </div>
+                                      </div>
                                 </div>
                             </div>
 
@@ -348,7 +387,7 @@
 
         </div>
     </div> <!-- MAIN SECTION -->
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 
 </html>
