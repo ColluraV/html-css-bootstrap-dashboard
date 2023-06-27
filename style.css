@@ -117,7 +117,7 @@ nav .container-fluid .col-1{
  /************************************************* CARD SECTION ***********************************************************/
 
 
-ul li img{
+ul li img, th img{
     width: 30px;
 }
 
@@ -131,21 +131,7 @@ ul li img{
     margin-left: 5px;
     padding: 0;
 }
-.no-m-p{
-    height: 42px;
 
-}
-.data{
-    min-width: 110px;
-}
-
-.bottoni{
-    min-width: 65px;
-    max-width: 90px;
-}
-.bottoni button{
-    border-radius: 6px;
-}
 
 #prossime-classi .box ul li .row{
     border-bottom: 1px solid rgb(212, 212, 212);

@@ -73,18 +73,21 @@
     <div class="container-fluid"> <!-- MAIN SECTION -->
         <div class="row">
 
-            <div id="left-section" class="flex-grow-0 nav-lat colonna justify-content-between align-items-center py-3"> <!-- nav left -->
+            <div id="left-section" class="flex-grow-0 nav-lat colonna justify-content-between align-items-center py-3">
+                <!-- nav left -->
                 <div class="top-icon colonna">
 
                     <a href="#"> <i class="fa-solid fa-house my-3"></i> <span class="mx-2 d-none d-md-inline"> Home
                         </span></a>
-                    <a href="#"> <i class="fa-solid fa-chart-simple my-3"></i> <span class="mx-2 d-none d-md-inline"> Stats
+                    <a href="#"> <i class="fa-solid fa-chart-simple my-3"></i> <span class="mx-2 d-none d-md-inline">
+                            Stats
                         </span></a>
                     <a href="#"> <i class="fa-solid fa-signal my-3"></i> <span class="mx-2 d-none d-md-inline"> Home
                         </span></a>
                 </div>
                 <div class="bot-icon colonna">
-                    <a href=""><i class="fa-solid fa-gear  my-2"></i> <span class="mx-2 d-none d-md-inline"> Admin</span></a>
+                    <a href=""><i class="fa-solid fa-gear  my-2"></i> <span class="mx-2 d-none d-md-inline">
+                            Admin</span></a>
                 </div>
             </div> <!-- nav left -->
 
@@ -113,19 +116,16 @@
 
                     </div>
 
-                    <div class=" col colonna align-items-start align-items-md-end  justify-content-around">
+                    <div class=" py-3 col colonna align-items-start align-items-md-end  justify-content-around">
                         <div class="d-flex"> Studenti online negli ultimi 30 minuti</div>
                         <div class="d-flex oversized"> 125 </div>
                     </div>
 
                     <div class="py-3 mb-auto col d-flex justify-content-md-center">
-                        <div class="align-middle">
+                        <span class=" mx-3 align-middle">
                             Nuovo studente
-                        </div>
-                        <a href="">
-                            <div id="squared-plus"
-                                class="d-flex mx-2 rounded-1 justify-content-center border border-white"> + </div>
-                        </a>
+                        </span>
+                        <button type="button" class="btn btn-outline-light"> +</button>
                     </div>
                 </div>
 
@@ -139,239 +139,114 @@
                                     Prossime Classi
                                 </div>
                                 <div class="box">
-                                    <ul class="list-group list-group-flush"> <!-- lista oggetti card -->
 
                                         <!--////  scgliere tra i badge colorati per le percentuali 
                                                               <span class="badge text-bg-success">done</span>    
                                                               <span class="badge text-bg-warning">process</span>
                                                               <span class="badge text-bg-danger">failed</span> /////////-->
 
-                                        <li class="list-group-item border border-0"> <!-- singolo oggetto lista card -->
-                                            <div class="row">
-                                                <div class="col-4 col-lg-5 col-xl-6 no-m-p d-flex align-items-center ">
-                                                    Nome </div>
-                                                <div
-                                                    class="col d-none d-md-flex justify-content-center no-m-p align-items-center data">
-                                                    Data inizio</div>
-                                                <div
-                                                    class="col d-none d-md-flex justify-content-center no-m-p align-items-center">
-                                                    ROI</div>
-                                                <div
-                                                    class="col no-m-p d-flex justify-content-center align-items-center ">
-                                                    Stato</div>
-                                                <div
-                                                    class="col no-m-p d-flex justify-content-center align-items-center ">
-                                                    Azioni</div>
-                                            </div>
-                                        </li>
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col"> Nome </th>
+                                                    <th scope="col"> Data inizio </th>
+                                                    <th scope="col"> ROI </th>
+                                                    <th scope="col"> Stato </th>
+                                                    <th scope="col"> Azioni </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row"><img src="img/class-avatar.jpg" alt=""> <span>
+                                                            Classe 75 </span> </th>
+                                                    <td>15 Feb 2021</td>
+                                                    <td> 20% </td>
+                                                    <td> <span class="badge text-bg-success">done</span> </td>
+                                                    <td>
+                                                        <button  type="button" class="btn btn-outline-secondary p-0"><i class="fs-6 p-1 fa-solid fa-pencil "></i></button>
+                                                        <button  type="button" class="btn btn-outline-secondary p-0"><i class="fs-6 p-1 fa-solid fa-trash "></i></button>
+                                                    </td>
+                                                <tr>
+                                                    <th scope="row"><img src="img/class-avatar.jpg" alt=""> <span>
+                                                            Classe 75 </span> </th>
+                                                    <td>15 Feb 2021</td>
+                                                    <td> 20% </td>
+                                                    <td> <span class="badge text-bg-danger">failed</span> </td>
+                                                    <td>
+                                                        <button  type="button" class="btn btn-outline-secondary p-0"><i class="fs-6 p-1 fa-solid fa-pencil "></i></button>
+                                                        <button  type="button" class="btn btn-outline-secondary p-0"><i class="fs-6 p-1 fa-solid fa-trash "></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row"><img src="img/class-avatar.jpg" alt=""> <span>
+                                                            Classe 75 </span> </th>
+                                                    <td>15 Feb 2021</td>
+                                                    <td> 20% </td>
+                                                    <td> <span class="badge text-bg-success">done</span> </td>
+                                                    <td>
+                                                        <button  type="button" class="btn btn-outline-secondary p-0"><i class="fs-6 p-1 fa-solid fa-pencil "></i></button>
+                                                        <button  type="button" class="btn btn-outline-secondary p-0"><i class="fs-6 p-1 fa-solid fa-trash "></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row"><img src="img/class-avatar.jpg" alt=""> <span>
+                                                            Classe 75 </span> </th>
+                                                    <td>15 Feb 2021</td>
+                                                    <td> 20% </td>
+                                                    <td> <span class="badge text-bg-success">done</span> </td>
+                                                    <td>
+                                                        <button  type="button" class="btn btn-outline-secondary p-0"><i class="fs-6 p-1 fa-solid fa-pencil "></i></button>
+                                                        <button  type="button" class="btn btn-outline-secondary p-0"><i class="fs-6 p-1 fa-solid fa-trash "></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row"><img src="img/class-avatar.jpg" alt=""> <span>
+                                                            Classe 75 </span> </th>
+                                                    <td>15 Feb 2021</td>
+                                                    <td> 20% </td>
+                                                    <td> <span class="badge text-bg-warning">process</span> </td>
+                                                    <td>
+                                                        <button  type="button" class="btn btn-outline-secondary p-0"><i class="fs-6 p-1 fa-solid fa-pencil "></i></button>
+                                                        <button  type="button" class="btn btn-outline-secondary p-0"><i class="fs-6 p-1 fa-solid fa-trash "></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row"><img src="img/class-avatar.jpg" alt=""> <span>
+                                                            Classe 75 </span> </th>
+                                                    <td>15 Feb 2021</td>
+                                                    <td> 20% </td>
+                                                    <td> <span class="badge text-bg-success">done</span> </td>
+                                                    <td>
+                                                        <button  type="button" class="btn btn-outline-secondary p-0"><i class="fs-6 p-1 fa-solid fa-pencil "></i></button>
+                                                        <button  type="button" class="btn btn-outline-secondary p-0"><i class="fs-6 p-1 fa-solid fa-trash "></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row"><img src="img/class-avatar.jpg" alt=""> <span>
+                                                            Classe 75 </span> </th>
+                                                    <td>15 Feb 2021</td>
+                                                    <td> 20% </td>
+                                                    <td> <span class="badge text-bg-success">done</span> </td>
+                                                    <td>
+                                                        <button  type="button" class="btn btn-outline-secondary p-0"><i class="fs-6 p-1 fa-solid fa-pencil "></i></button>
+                                                        <button  type="button" class="btn btn-outline-secondary p-0"><i class="fs-6 p-1 fa-solid fa-trash "></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row"><img src="img/class-avatar.jpg" alt=""> <span>
+                                                            Classe 75 </span> </th>
+                                                    <td>15 Feb 2021</td>
+                                                    <td> 20% </td>
+                                                    <td> <span class="badge text-bg-danger">failed</span> </td>
+                                                    <td>
+                                                        <button  type="button" class="btn btn-outline-secondary p-0"><i class="fs-6 p-1 fa-solid fa-pencil "></i></button>
+                                                        <button  type="button" class="btn btn-outline-secondary p-0"><i class="fs-6 p-1 fa-solid fa-trash "></i></button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
 
-                                        <li class="list-group-item border border-0"> <!-- singolo oggetto lista card -->
-                                            <div class="row">
-                                                <div class=" no-m-p col-4 col-lg-5 col-xl-6 d-flex align-items-center">
-                                                    <img src="img/class-avatar.jpg" alt=""> <span> class 75</span>
-                                                </div>
-                                                <div
-                                                    class="col no-m-p d-none d-md-flex align-items-center justify-content-center data">
-                                                    15 feb 2021</div>
-                                                <div
-                                                    class="col no-m-p d-flex align-items-center justify-content-center">
-                                                    20% </div>
-                                                <div
-                                                    class="col no-m-p d-none d-md-flex align-items-center justify-content-center">
-                                                    <span class="badge text-bg-success">done</span>
-                                                </div>
-
-                                                <div class="col no-m-p d-flex justify-content-center">
-                                                    <div
-                                                        class="bottoni box w-75 d-flex no-m-p align-items-center justify-content-around ">
-                                                        <button><i class="fs-5 p-1 fa-solid fa-pencil "></i></button>
-                                                        <button><i class="fs-5 p-1 fa-solid fa-trash "></i></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-
-                                        <li class="list-group-item border border-0"> <!-- singolo oggetto lista card -->
-                                            <div class="row">
-                                                <div class=" no-m-p col-4 col-lg-5 col-xl-6 d-flex align-items-center">
-                                                    <img src="img/class-avatar.jpg" alt=""> <span> class 76</span>
-                                                </div>
-                                                <div
-                                                    class="col no-m-p d-none d-md-flex align-items-center justify-content-center data">
-                                                    15 feb 2021</div>
-                                                <div
-                                                    class="col no-m-p d-flex align-items-center justify-content-center">
-                                                    20% </div>
-                                                <div
-                                                    class="col no-m-p d-none d-md-flex align-items-center justify-content-center">
-                                                    <span class="badge text-bg-warning">process</span>
-                                                </div>
-
-                                                <div class="col no-m-p d-flex justify-content-center">
-                                                    <div
-                                                        class="bottoni box w-75 d-flex no-m-p align-items-center justify-content-around ">
-                                                        <button><i class="fs-5 p-1 fa-solid fa-pencil "></i></button>
-                                                        <button><i class="fs-5 p-1 fa-solid fa-trash "></i></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-
-                                        <li class="list-group-item border border-0"> <!-- singolo oggetto lista card -->
-                                            <div class="row">
-                                                <div class=" no-m-p col-4 col-lg-5 col-xl-6 d-flex align-items-center">
-                                                    <img src="img/class-avatar.jpg" alt=""> <span> class 77</span>
-                                                </div>
-                                                <div
-                                                    class="col no-m-p d-none d-md-flex align-items-center justify-content-center data">
-                                                    15 feb 2021</div>
-                                                <div
-                                                    class="col no-m-p d-flex align-items-center justify-content-center">
-                                                    20% </div>
-                                                <div
-                                                    class="col no-m-p d-none d-md-flex align-items-center justify-content-center">
-                                                    <span class="badge text-bg-success">done</span>
-                                                </div>
-
-                                                <div class="col no-m-p d-flex justify-content-center">
-                                                    <div
-                                                        class="bottoni box w-75 d-flex no-m-p align-items-center justify-content-around ">
-                                                        <button><i class="fs-5 p-1 fa-solid fa-pencil "></i></button>
-                                                        <button><i class="fs-5 p-1 fa-solid fa-trash "></i></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-
-                                        <li class="list-group-item border border-0"> <!-- singolo oggetto lista card -->
-                                            <div class="row">
-                                                <div class=" no-m-p col-4 col-lg-5 col-xl-6 d-flex align-items-center">
-                                                    <img src="img/class-avatar.jpg" alt=""> <span> class 78</span>
-                                                </div>
-                                                <div
-                                                    class="col no-m-p d-none d-md-flex align-items-center justify-content-center data">
-                                                    15 feb 2021</div>
-                                                <div
-                                                    class="col no-m-p d-flex align-items-center justify-content-center">
-                                                    20% </div>
-                                                <div
-                                                    class="col no-m-p d-none d-md-flex align-items-center justify-content-center">
-                                                    <span class="badge text-bg-danger">failed</span>
-                                                </div>
-
-                                                <div class="col no-m-p d-flex justify-content-center">
-                                                    <div
-                                                        class="bottoni box w-75 d-flex no-m-p align-items-center justify-content-around ">
-                                                        <button><i class="fs-5 p-1 fa-solid fa-pencil "></i></button>
-                                                        <button><i class="fs-5 p-1 fa-solid fa-trash "></i></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="list-group-item border border-0"> <!-- singolo oggetto lista card -->
-                                            <div class="row">
-                                                <div class=" no-m-p col-4 col-lg-5 col-xl-6 d-flex align-items-center">
-                                                    <img src="img/class-avatar.jpg" alt=""> <span> class 79</span>
-                                                </div>
-                                                <div
-                                                    class="col no-m-p d-none d-md-flex align-items-center justify-content-center data">
-                                                    15 feb 2021</div>
-                                                <div
-                                                    class="col no-m-p d-flex align-items-center justify-content-center">
-                                                    20% </div>
-                                                <div
-                                                    class="col no-m-p d-none d-md-flex align-items-center justify-content-center">
-                                                    <span class="badge text-bg-success">done</span>
-                                                </div>
-
-                                                <div class="col no-m-p d-flex justify-content-center">
-                                                    <div
-                                                        class="bottoni box w-75 d-flex no-m-p align-items-center justify-content-around ">
-                                                        <button><i class="fs-5 p-1 fa-solid fa-pencil "></i></button>
-                                                        <button><i class="fs-5 p-1 fa-solid fa-trash "></i></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-
-                                        <li class="list-group-item border border-0"> <!-- singolo oggetto lista card -->
-                                            <div class="row">
-                                                <div class=" no-m-p col-4 col-lg-5 col-xl-6 d-flex align-items-center">
-                                                    <img src="img/class-avatar.jpg" alt=""> <span> class 80</span>
-                                                </div>
-                                                <div
-                                                    class="col no-m-p d-none d-md-flex align-items-center justify-content-center data">
-                                                    15 feb 2021</div>
-                                                <div
-                                                    class="col no-m-p d-flex align-items-center justify-content-center">
-                                                    20% </div>
-                                                <div
-                                                    class="col no-m-p d-none d-md-flex align-items-center justify-content-center">
-                                                    <span class="badge text-bg-success">done</span>
-                                                </div>
-
-                                                <div class="col no-m-p d-flex justify-content-center">
-                                                    <div
-                                                        class="bottoni box w-75 d-flex no-m-p align-items-center justify-content-around ">
-                                                        <button><i class="fs-5 p-1 fa-solid fa-pencil "></i></button>
-                                                        <button><i class="fs-5 p-1 fa-solid fa-trash "></i></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="list-group-item border border-0"> <!-- singolo oggetto lista card -->
-                                            <div class="row">
-                                                <div class=" no-m-p col-4 col-lg-5 col-xl-6 d-flex align-items-center">
-                                                    <img src="img/class-avatar.jpg" alt=""> <span> class 81</span>
-                                                </div>
-                                                <div
-                                                    class="col no-m-p d-none d-md-flex align-items-center justify-content-center data">
-                                                    15 feb 2021</div>
-                                                <div
-                                                    class="col no-m-p d-flex align-items-center justify-content-center">
-                                                    20% </div>
-                                                <div
-                                                    class="col no-m-p d-none d-md-flex align-items-center justify-content-center">
-                                                    <span class="badge text-bg-warning">process</span>
-                                                </div>
-
-                                                <div class="col no-m-p d-flex justify-content-center">
-                                                    <div
-                                                        class="bottoni box w-75 d-flex no-m-p align-items-center justify-content-around ">
-                                                        <button><i class="fs-5 p-1 fa-solid fa-pencil "></i></button>
-                                                        <button><i class="fs-5 p-1 fa-solid fa-trash "></i></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-
-                                        <li class="list-group-item border border-0"> <!-- singolo oggetto lista card -->
-                                            <div class="row">
-                                                <div class=" no-m-p col-4 col-lg-5 col-xl-6 d-flex align-items-center">
-                                                    <img src="img/class-avatar.jpg" alt=""> <span> class 82</span>
-                                                </div>
-                                                <div
-                                                    class="col no-m-p d-none d-md-flex align-items-center justify-content-center data">
-                                                    15 feb 2021</div>
-                                                <div
-                                                    class="col no-m-p d-flex align-items-center justify-content-center">
-                                                    20% </div>
-                                                <div
-                                                    class="col no-m-p d-none d-md-flex align-items-center justify-content-center">
-                                                    <span class="badge text-bg-danger">failed</span>
-                                                </div>
-
-                                                <div class="col no-m-p d-flex justify-content-center">
-                                                    <div
-                                                        class="bottoni box w-75 d-flex no-m-p align-items-center justify-content-around ">
-                                                        <button><i class="fs-5 p-1 fa-solid fa-pencil "></i></button>
-                                                        <button><i class="fs-5 p-1 fa-solid fa-trash "></i></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-
-                                    </ul>
+                                        
                                 </div>
 
                             </div>
@@ -443,20 +318,22 @@
 
 
 
-                              <div id="stats" class="card"> <!-- CARD "F.A.Q." -->
+                            <div id="stats" class="card"> <!-- CARD "F.A.Q." -->
                                 <div class="box p-2">
                                     <div class="card mb-3">
                                         <img src="img/stats.jpeg" class="card-img-top" alt="...">
                                         <div class="card-body border-bottom">
-                                          <h5 class="card-title">Utenti attivi</h5>
-                                          <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                                            <h5 class="card-title">Utenti attivi</h5>
+                                            <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo
+                                                mese</p>
                                         </div>
-                                        <div class="border-bottomm px-3"> GENNAIO: 1200</div>
-                                        <div class="border-bottomm px-3"> FEBBRAIO: 800</div>
-                                        <div class="border-bottomm px-3"> MARZO: OVER 9000</div>
-                                        <div class=" rounded-1 m-3 "> <a href=""> visualizza report approfondito </a></div>
+                                        <div class="border-bottom py-2 px-3"> GENNAIO: 1200</div>
+                                        <div class="border-bottom py-2 px-3"> FEBBRAIO: 800</div>
+                                        <div class="border-bottom py-2 px-3"> MARZO: OVER 9000</div>
+                                        <div class=" rounded-1 m-3 "> <a href=""> visualizza report approfondito </a>
+                                        </div>
 
-                                      </div>
+                                    </div>
 
                                 </div>
                             </div>
