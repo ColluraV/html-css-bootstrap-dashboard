@@ -101,6 +101,7 @@ nav .container-fluid .col-1{
     background-color: #1B72E8;
     max-height: 130px;
     flex-shrink: 0;
+    padding-top: 10px;
  }
  
 
@@ -114,7 +115,9 @@ nav .container-fluid .col-1{
     height:  calc(1.325rem + .9vw);
  }
 
-
+ #offcanvasRight{
+    width: 600px;
+ }
  /************************************************* CARD SECTION ***********************************************************/
 
 
